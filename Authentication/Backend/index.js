@@ -8,7 +8,7 @@ dotenv.config();
 let app = express() 
 let port = process.env.PORT || 4000
 app.use(express.json())
-app.use(cookieParser)
+app.use(cookieParser())
 app.use("/api", authRouter)
 
 
